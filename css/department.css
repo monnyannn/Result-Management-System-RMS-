@@ -31,6 +31,19 @@ td, th{
 .b900{
     font-weight: 900;
 }
+.dash-logout >button{
+    padding: 15% 20%;
+    margin-right: 30px;
+    background-color: #fff;
+    color: teal;
+    border-radius: 10px;
+    border-style: none;
+  }
+  .dash-logout >button >a{
+    color: teal;
+    font-weight: 700;
+  
+  }
 .tdata{
     background-color: rgba(128, 128, 128, 0.165);
 } 

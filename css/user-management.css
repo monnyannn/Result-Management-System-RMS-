@@ -129,6 +129,19 @@ header {
 header:hover {
   box-shadow: var(--dark-white-shadow);
 }
+.dash-logout >button{
+  padding: 15% 20%;
+  margin-right: 30px;
+  background-color: #fff;
+  color: teal;
+  border-radius: 10px;
+  border-style: none;
+}
+.dash-logout >button >a{
+  color: teal;
+  font-weight: 700;
+
+}
 nav {
   height: 6rem;
 }

@@ -231,6 +231,20 @@ nav {
 .pxy2 {
   padding: 0.8rem 1.6rem;
 }
+
+.dash-logout >button{
+  padding: 15% 20%;
+  margin-right: 30px;
+  background-color: #fff;
+  color: teal;
+  border-radius: 10px;
+  border-style: none;
+}
+.dash-logout >button >a{
+  color: teal;
+  font-weight: 700;
+
+}
 .mx {
   margin-left: 2%;
   margin-right: 2%;

@@ -120,6 +120,19 @@ img {
 .width4 {
   width: 8.333333333333333%;
 }
+.dash-logout >button{
+  padding: 15% 20%;
+  margin-right: 30px;
+  background-color: #fff;
+  color: teal;
+  border-radius: 10px;
+  border-style: none;
+}
+.dash-logout >button >a{
+  color: teal;
+  font-weight: 700;
+
+}
 header {
   background-image: linear-gradient(to right, #082e7e, #04925e);
   color: var(--clr-white);
