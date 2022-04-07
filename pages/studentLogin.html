@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Admin Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-- Sign In Form -->
+          <form class="sign-in-form" onsubmit="stdLoginAdmin(event);">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <img src="/images/bid.png" alt="" width="25px" />
+              <input type="text" id="idnum" placeholder="ID Number" required />
+            </div>
+            <div class="input-field">
+              <img src="/images/bpass.png" alt="" width="25px" />
+              <input
+                type="password"
+                id="pass_word"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign in"
+              class="btn solid"
+              id="submit"
+            />
+          </form>
+          <!-- Sign Up Form -->
+          <form class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <img src="/images/id.png" alt="" width="25px" />
+              <input type="text" id="id_num" placeholder="ID Number" />
+            </div>
+            <div class="input-field">
+              <img src="/images/password.png" alt="" width="25px" />
+              <input type="psw" placeholder="Password" />
+            </div>
+            <div class="input-field">
+              <img src="/images/password.png" alt="" width="25px" />
+              <input
+                type="password"
+                id="con_pass"
+                placeholder="Confirm Password"/>
+            </div>
+            <input type="submit" 
+            onclick="signUpStudentAdmin()"
+            class="btn btn2" value="Sign up" />
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Student Access</h3>
+            <p>
+              Must enter their USN(University ID Number) to check their results.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Student Access</h3>
+            <p>Only for the Students Under Institute.</p>
+            <button class="btn transparent" id="sign-in-btn">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="../js/studentAdminRegister.js"></script>
+  </body>
+</html>
