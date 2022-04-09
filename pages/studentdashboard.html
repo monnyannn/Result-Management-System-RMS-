@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Result Management System" />
+    <meta name="description" content="The Admin Dashboard for the Result Management System" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css" />
+    <script src="../js/dashboard.js" type="module" defer></script>
+    <title>Result Management Student Dashboard</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="px fixed">
+        <nav class="flex space-between align-center">
+            <h1 class="capitalize">Student Portal</h1>
+            <ul class="flex space-between align-center">
+                <li class="flex space-between align-center d-none-mobi">
+                    <a href="#"><img src="../images/email.png" alt="" /></a><a href="#"><img
+                            src="../images/arr-down.png" alt="" class="arr-down" /></a>
+                </li>
+                <li class="flex space-between align-center d-none-mobi">
+                    <a href="#"><img src="../images/alarm.png" alt="" /></a><a href="#"><img
+                            src="../images/arr-down.png" alt="" class="arr-down" /></a>
+                </li>
+                <li class="flex space-between align-center mobi-lft">
+                    <a href="#"><img src="../images/user.png" alt="" /><a href="#" class="admin wh">Abimbola</a></a><a
+                        href="#"><img src="../images/arr-down.png" alt="" class="arr-down" /></a>
+                </li>
+                <li class="dash-logout">
+                    <button><a href="/index.html"> Logout</a></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Aside -->
+    <aside class="aside d-none-lapi">
+        <ul class="pt1 flex column space-between">
+            <li id="close-icon" class="d-none close-icon">
+                <div class="close-btn">
+                    <img src="../images/close.png" alt="" />
+                </div>
+            </li>
+            <li class="pl1 active">
+                <a href="../pages/studentdashboard.html" class=" flex align-center">
+                    <img src="../images/dashboard.png" alt="" class="aside-img" />
+                    <p class="capitalize">Dashboard</p>
+                </a>
+            </li>
+            <li class="pl1">
+                <a href="../pages/schoolactivity.html" class="flex align-center">
+                    <img src="../images/students.png" alt="" class="aside-img" />
+                    <p class="capitalize">School Activity</p>
+                </a>
+            </li>
+            <li class="pl1">
+                <a href="../pages/dep-courses.html" class="flex align-center">
+                    <img src="../images/students.png" alt="" class="aside-img" />
+                    <p class="capitalize">Department & Courses</p>
+                </a>
+            </li>
+            <li class="pl1">
+                <a href="../pages/result.html" class="flex align-center"><img src="../images/result.png" alt=""
+                        class="aside-img" />
+                    <p class="capitalize">Results</p>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Aside -->
+    <main>
+        <div class="pt3">
+            <h3 class="student mt4"></h3>
+            <div class="flex space-between align-center dash-hamb">
+                <h2 class="uppercase blk2 pl2 pt2">dashboard</h2>
+                <div class="hamburger hamburger-btn" id="hamburger">
+                    <img src="../images/hamburger.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <hr class="hor-line mb1" />
+        <div class="rect-white px align-center mx">
+            <ul>
+                <li>
+                    <a href="#" class="flex align-center">
+                        <img src="../images/dashboard.png" alt="" class="mr" />
+                        <p>dashboard</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="card-wrapper flex space-between align-center wrap">
+        <div class="card uppercase flex align-center space-between">
+          <div>
+            <h4 class="pl1 opacity department">11</h4>
+            <h3 class="opacity">Department</h3>
+          </div>
+          <div class="card-img opacity">
+            <img src="../images/users-group-bg.png" alt="" />
+          </div>
+        </div>
+        <div class="card uppercase flex align-center space-between">
+          <div>
+            <h4 class="pl1 opacity stud">11</h4>
+            <h3 class="opacity">students</h3>
+          </div>
+          <div class="card-img opacity">
+            <img src="../images/user-bg.png" alt="" />
+          </div>
+        </div>
+        <div class="card uppercase flex align-center space-between">
+          <div>
+            <h4 class="pl1 opacity">11</h4>
+            <h3 class="opacity">teachers</h3>
+          </div>
+          <div class="card-img opacity">
+            <img src="../images/male-bg.png" alt="" />
+          </div>
+        </div>
+        <div class="card uppercase flex align-center space-between">
+          <div>
+            <h4 class="pl1 opacity">11</h4>
+            <h3 class="opacity">new message</h3>
+          </div>
+          <div class="card-img opacity">
+            <img src="../images/message-bg.png" alt="" />
+          </div>
+        </div>
+      </div> -->
+        <div class="flex space-between mt card2-6-wrapper mb2 wrap">
+            <div class="col2-6 bg-wh">
+                <div class="card2-6-1 pxy">
+                    <div class="flex finger align-center">
+                        <div class="mr2">
+                            <img src="../images/finger.png" alt="" />
+                        </div>
+                        <p>Lecturers</p>
+                    </div>
+                    <div class="flex">
+                        <div class="col2">
+                            <p class="mt2 opacity"></p>
+                            <div class="mt3 flex">
+                                <div class="mr2">
+                                    <img src="../images/user-bl.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="mb2 col2-person"> Mr Oyindasola Bekolori</p>
+                                    <p>ICT 201</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="mt3 flex">
+                                <div class="mr2">
+                                    <img src="../images/user-bl.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="mb2 col2-person"> Mr Olusegun Ayomide</p>
+                                    <p>GNS 233</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2-6-1 pxy">
+                    <div class="flex">
+                        <div class="col2">
+                            <div class="mt3 flex">
+                                <div class="mr2">
+                                    <img src="../images/user-bl.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="mb2 col2-person">Mrs Juanita Stugeon</p>
+                                    <p>ICT 202</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="mt3 flex">
+                                <div class="mr2">
+                                    <img src="../images/user-bl.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="mb2 col2-person">Miss Muinat Temidayo</p>
+                                    <p>GNS 234</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2-6-1 pxy">
+                    <div class="flex">
+                        <div class="col2">
+                            <div class="mt3 flex">
+                                <div class="mr2">
+                                    <img src="../images/user-bl.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="mb2 col2-person">Mr Boluwatife Adeola</p>
+                                    <p>ICT 203</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="mt3 flex">
+                                <div class="mr2">
+                                    <img src="../images/user-bl.png" alt="" />
+                                </div>
+                                <div>
+                                    <p class="mb2 col2-person">Mr Sukanmi David</p>
+                                    <p>GNS 235</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2-6-2 pxy mt2">
+                    <div class="flex finger align-center">
+                        <div class="mr2">
+                            <img src="../images/circle-left.png" alt="" />
+                        </div>
+                        <p>News & Events</p>
+                    </div>
+                    <div class="bg-gry pxy2 br">
+                        <div class="flex">
+                            <div class="bg-rd pxy br mr2">
+                                <p class="wh">Events</p>
+                            </div>
+                            <p class="blk1">ICT 203 has been Resheduled.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gry pxy2 br mt4">
+                        <div class="flex">
+                            <div class="bg-rd pxy br mr2">
+                                <p class="wh">Events</p>
+                            </div>
+                            <p class="blk1">GNS 234 has been Cancelled.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gry pxy2 br mt4">
+                        <div class="flex">
+                            <div class="bg-rd pxy br mr2">
+                                <p class="wh">Events</p>
+                            </div>
+                            <p class="blk1">Robotics Dep[artment Will Soon Be Intorduce.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2-6-3 pxy mt2">
+                    <div class="flex finger align-center">
+                        <div class="mr2">
+                            <img src="../images/finger.png" alt="" />
+                        </div>
+                        <p>Quink Links</p>
+                    </div>
+                    <div class="flex space-between finger wh">
+                        <div class="bg-gr col2-1 flex center">
+                            <p>News Feed</p>
+                        </div>
+                        <div class="bg-gr col2-1 flex center">Events</div>
+                    </div>
+                    <div class="flex space-between mt4 wh">
+                        <div class="bg-gr col2-1 flex center">Class Schedule</div>
+                        <div class="bg-gr col2-1 flex center">Send mail / SMS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2-4"></div>
+        </div>
+    </main>
+</body>
+
+</html>
